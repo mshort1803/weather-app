@@ -1,0 +1,86 @@
+html {
+  background-color:#FAD0C3;
+}
+body {
+  color: #333333;
+  background-color: #ffff;
+  font-family: arial;
+  max-width: 650px;
+  margin: 0 auto;
+  padding:0 16px;
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh;
+  border-left: 2px solid #eeeeee;
+  border-right: 2px solid #eeeeee;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+footer {
+  color: #888888;
+  border-top: 1px solid #eeeeee;
+  margin: 20px 0 0 0;
+  padding: 20px 0;
+}
+
+header {
+  margin: 20px 0 40px 0;
+}
+
+h1 {
+  font-size: 64px;
+  margin: 0 0 20px 0;
+}
+
+header img {
+  display:inline-flex;
+  float:right;
+  width:125px;
+  margin:0 50px 0 0;
+}
+
+header a {
+  color:#888888;
+  margin: 0 20px 0 0;
+  text-decoration: none;
+}
+
+.profile {
+  width:250px;
+}
+
+.locationInput {
+  height:35px; width:400px;
+  color:#cccccc;
+  font-size: 25px;
+  border:1px solid #eeeeee;
+  display:block;
+  margin:0 auto;
+  border-radius:15px;
+  padding:2px 20px;
+  font-weight:lighter;
+}
+
+.locationInput:focus {
+  outline-color:#333333;
+  outline-style:groove;
+  box-shadow: 0 1px 6px #eeeeee;
+}
+
+button {
+  display:block;
+  margin:10px auto;
+  width:100px; height:40px;
+  background-color:#333333;
+  color:#eeeeee;
+  border-radius:10px;
+  border:none;
+  box-shadow: 0 2px 2px #999;
+}
+
+button:hover {
+  box-shadow:none;
+}
