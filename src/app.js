@@ -6,6 +6,7 @@ const geocode = require('./utils/geocode.js')
 const forecast = require('./utils/forecast.js')
 
 const app = express();
+const port = process.env.PORT || 3000
 
 // Define paths for express config
 const publicDirectoryPath = path.join(__dirname, '../public');
@@ -24,7 +25,7 @@ app.use(express.static(publicDirectoryPath));
 app.get('/', (req, res) => {
   res.render('index', {
     title: 'Weather App',
-    name: 'Michelle Short',
+    name: 'Michael Short',
   });
 });
 
@@ -38,7 +39,7 @@ app.get('/about', (req, res) => {
 app.get('/help', (req, res) => {
   res.render('help', {
     title: 'Welcome to the help page',
-    name: 'Michelle Short',
+    name: 'Michael Short',
     helptext: 'This is some helpful text'
   });
 });
@@ -95,6 +96,6 @@ app.get('*', (req, res) => {
 });
 
 // Start Server
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log("Server started...");
 });
